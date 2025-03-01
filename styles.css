@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #4A4A70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+
+}
+/* Floating Navigation */
+.navbar {
+    display: flex;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: -2%;
+    z-index: 10; 
+}
+
+.nav-item {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav-item:hover {
+    background: black;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.nav-item.active {
+    background: black;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 70px;
+}
+.card h2{
+    position: absolute;
+    top: 220px;
+    padding-left: 30px;
+    font-size:x-large;
+    line-height: .3;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.card p{
+    position: absolute;
+    top: 230px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #fff;
+   
+
+}
+.card p i img{
+    width: 20px;
+}
+
+
+.card img {
+    width: 100%;
+    /* border-radius: 5px; */
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: gray;
+    font-size: 14px;
+}
+
+/* Mobile First Approach - Default Styling Applied */
+
+/* Tablets and Small Laptops */
+@media screen and (min-width: 600px) {
+    .container {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .navbar {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .nav-item {
+        font-size: 22px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* Medium to Large Screens (Laptops & Desktops) */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 450px;
+    }
+
+    .navbar {
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .nav-item {
+        font-size: 24px;
+    }
+
+    .card {
+        width: 350px;
+    }
+}
+
+/* Large Screens and Desktops */
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 500px;
+    }
+
+    .card {
+        width: 380px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .card ul li {
+        font-size: 16px;
+    }
+}
+
